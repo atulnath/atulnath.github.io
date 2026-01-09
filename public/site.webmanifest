@@ -1,0 +1,25 @@
+{
+  "name": "Atul Chandra Nath | Portfolio",
+  "short_name": "Atul Portfolio",
+  "description": "Automotive Software Graduate | Embedded Systems Enthusiast. Interests: Computer Vision, Machine Learning, Artificial Intelligence, Large Language Models.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["portfolio", "technology", "engineering"],
+  "icons": [
+    {
+      "src": "/pfp-icon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}
