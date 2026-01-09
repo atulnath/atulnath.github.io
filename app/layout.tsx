@@ -17,9 +17,6 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-// Base path for GitHub Pages deployment
-const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
-
 export const metadata = {
   title:
     "Atul Chandra Nath | Automotive Software Engineering Student | Master Student",
@@ -58,13 +55,13 @@ export const metadata = {
     icon: [
       // Next.js automatically serves favicon.ico from app directory
       // For GitHub Pages with basePath, we need to reference it correctly
-      { url: `${basePath}/favicon.ico`, sizes: "any" },
-      { url: `${basePath}/pfp-icon.ico`, sizes: "any", type: "image/x-icon" },
+      { url: `../public/favicon.ico`, sizes: "any" },
+      { url: `../public/pfp-icon.ico`, sizes: "any", type: "image/x-icon" },
     ],
-    apple: `${basePath}/pfp-icon.ico`,
-    shortcut: `${basePath}/favicon.ico`,
+    apple: `../public/pfp-icon.ico`,
+    shortcut: `../public/favicon.ico`,
   },
-  manifest: `${basePath}/site.webmanifest`,
+  manifest: `../public/site.webmanifest`,
 };
 
 export default function RootLayout({
