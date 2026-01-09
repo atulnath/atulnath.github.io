@@ -7,6 +7,7 @@ import type {
   ContactInfo,
   PersonalInfo,
 } from "../types/types";
+import { getAssetPath } from "../utils/assetPath";
 
 export const personalInfo: PersonalInfo = {
   name: "Atul Chandra Nath",
@@ -22,10 +23,7 @@ export const personalInfo: PersonalInfo = {
   ],
   resumeUrl:
     "https://drive.google.com/file/d/1uzS84N2kDwzRHC6xxsDph-98o-8VL_O5/view?usp=sharing",
-  profileImage:
-    process.env.NODE_ENV === "production"
-      ? "/portfolio/profile-pic.jpg"
-      : "/profile-pic.jpg",
+  profileImage: getAssetPath("/profile-pic.jpg"),
 };
 
 export const aboutSections = [
@@ -145,10 +143,7 @@ export const projects: Project[] = [
       "Master's Internship Project - German License Plate Recognition System",
     description:
       "Developed a German Automatic License Plate Recognition (ALPR) system using YOLOv8 for real-time license plate detection and EasyOCR for character recognition. Implemented the solution in Python with OpenCV for video and image processing, and integrated the SORT algorithm to track vehicles across frames. Trained the model on 4,000+ German license plate images, achieving a 95% detection accuracy and 94% recognition accuracy under varied lighting and environmental conditions.",
-    image:
-      process.env.NODE_ENV === "production"
-        ? "/portfolio/lpr-de.png"
-        : "/lpr-de.png",
+    image: getAssetPath("/lpr-de.png"),
     technologies: [
       "Python",
       "YOLOv8",
@@ -167,10 +162,7 @@ export const projects: Project[] = [
       "A Full-Stack Drone Data Visualization System based on Rust & Vue.js",
     description:
       "Developed a real-time GPS data processing and visualization system as part of my thesis project. GPS base and rover data were collected using Python after establishing a connection with an Ubuntu environment and stored in a PostgreSQL database. Implemented a backend using the Rust Rocket framework to expose the data via RESTful APIs generated using OpenAPI tooling. These APIs were consumed by a frontend application to display GPS data dynamically, with automatic updates triggered whenever new records were inserted into the database.",
-    image:
-      process.env.NODE_ENV === "production"
-        ? "/portfolio/drone.jpg"
-        : "/drone.jpg",
+    image: getAssetPath("/drone.jpg"),
     technologies: [
       "Python",
       "Ubuntu",
@@ -189,10 +181,7 @@ export const projects: Project[] = [
     title: "Bangla License Plate Recognition System",
     description:
       "Designed and implemented a Bangla License Plate Recognition (LPR) system for smart vehicle management using computer vision and deep learning techniques. The system consists of three stages: license plate detection, character segmentation, and character recognition. Plate localization was achieved through image preprocessing, adaptive thresholding, contour detection, tilt correction, and region-of-interest cropping. Character recognition was performed using a deep Convolutional Neural Network (CNN) trained to learn discriminative features directly from segmented characters. The system was implemented in Python using OpenCV and evaluated on offline vehicle images captured under diverse illumination, weather, and road conditions, achieving high detection, segmentation, and recognition accuracy.",
-    image:
-      process.env.NODE_ENV === "production"
-        ? "/portfolio/bangla-lpr.png"
-        : "/bangla-lpr.png",
+    image: getAssetPath("/bangla-lpr.png"),
     technologies: [
       "Python",
       "OpenCV",

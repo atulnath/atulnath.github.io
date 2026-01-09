@@ -53,15 +53,14 @@ export const metadata = {
   },
   icons: {
     icon: [
-      // Next.js automatically serves favicon.ico from app directory
-      // For GitHub Pages with basePath, we need to reference it correctly
-      { url: `../public/favicon.ico`, sizes: "any" },
-      { url: `../public/pfp-icon.ico`, sizes: "any", type: "image/x-icon" },
+      // Next.js automatically serves files from public directory
+      { url: `/favicon.ico`, sizes: "any" },
+      { url: `/pfp-icon.ico`, sizes: "any", type: "image/x-icon" },
     ],
-    apple: `../public/pfp-icon.ico`,
-    shortcut: `../public/favicon.ico`,
+    apple: `/pfp-icon.ico`,
+    shortcut: `/favicon.ico`,
   },
-  manifest: `../public/site.webmanifest`,
+  manifest: `/site.webmanifest`,
 };
 
 export default function RootLayout({

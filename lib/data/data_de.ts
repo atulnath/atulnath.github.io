@@ -8,6 +8,7 @@ import type {
   ContactInfo,
   PersonalInfo,
 } from "../types/types";
+import { getAssetPath } from "../utils/assetPath";
 
 export const personalInfo: PersonalInfo = {
   name: "Atul Chandra Nath",
@@ -23,10 +24,7 @@ export const personalInfo: PersonalInfo = {
   ],
   resumeUrl:
     "https://drive.google.com/file/d/1uzS84N2kDwzRHC6xxsDph-98o-8VL_O5/view?usp=sharing",
-  profileImage:
-    process.env.NODE_ENV === "production"
-      ? "/portfolio/profile-pic.jpg"
-      : "/profile-pic.jpg",
+  profileImage: getAssetPath("/profile-pic.jpg"),
 };
 
 export const aboutSections = [
@@ -149,10 +147,7 @@ export const projects: Project[] = [
     title: "Masterpraktikumsprojekt – Deutsches Kennzeichenerkennungssystem",
     description:
       "Entwicklung eines deutschen Automatic License Plate Recognition (ALPR)-Systems mit YOLOv8 zur Echtzeit-Kennzeichendetektion und EasyOCR zur Zeichenerkennung. Implementiert in Python mit OpenCV und Integration des SORT-Algorithmus zur Fahrzeugverfolgung über mehrere Frames. Training mit über 4.000 Bildern und Erreichung hoher Genauigkeit unter realen Bedingungen.",
-    image:
-      process.env.NODE_ENV === "production"
-        ? "/portfolio/lpr-de.png"
-        : "/lpr-de.png",
+    image: getAssetPath("/lpr-de.png"),
     technologies: [
       "Python",
       "YOLOv8",
@@ -170,10 +165,7 @@ export const projects: Project[] = [
     title: "Full-Stack-Drohnen-Datenvisualisierungssystem mit Rust & Vue.js",
     description:
       "Entwicklung eines Echtzeit-GPS-Datenverarbeitungs- und Visualisierungssystems im Rahmen der Masterarbeit. Erfassung der GPS-Daten mit Python, Speicherung in PostgreSQL und Bereitstellung über ein Rust-Rocket-Backend mit REST-APIs, die von einem Frontend dynamisch visualisiert werden.",
-    image:
-      process.env.NODE_ENV === "production"
-        ? "/portfolio/drone.jpg"
-        : "/drone.jpg",
+    image: getAssetPath("/drone.jpg"),
     technologies: [
       "Python",
       "Ubuntu",
@@ -192,10 +184,7 @@ export const projects: Project[] = [
     title: "Bangla-Kennzeichenerkennungssystem",
     description:
       "Entwurf und Implementierung eines Bangla-Kennzeichenerkennungssystems für intelligentes Fahrzeugmanagement mit Computer Vision und Deep Learning. Das System umfasst Kennzeichendetektion, Zeichensegmentierung und -erkennung unter realen Bedingungen.",
-    image:
-      process.env.NODE_ENV === "production"
-        ? "/portfolio/bangla-lpr.png"
-        : "/bangla-lpr.png",
+    image: getAssetPath("/bangla-lpr.png"),
     technologies: [
       "Python",
       "OpenCV",
