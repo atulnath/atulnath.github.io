@@ -70,9 +70,8 @@ export const de = {
 
   // Contact
   contact: {
-    title: "Kontakt aufnehmen",
-    description:
-      "Ich bin immer offen für Gespräche über neue Möglichkeiten, interessante Projekte oder einfach nur für ein Gespräch über Technologie und Automatisierung.",
+    title: "Der Kaffee geht auf mich",
+    description: "Ich liebe es, neue Leute kennenzulernen und mich über neue Technologien auszutauschen. Wenn du fachsimpeln, an einem Projekt zusammenarbeiten oder einfach nur „Hallo“ sagen möchtest, melde dich gerne bei mir.",
     sendMessage: "Nachricht senden",
     contactInformation: "Kontaktinformationen",
     email: "E-Mail",
@@ -144,7 +143,7 @@ export const de = {
   education: {
     viewAll: "Alle Ansehen",
     courses: "Kurse",
-    keyCourseW:"Wichtigste Studieninhalte",
+    keyCourseW: "Wichtigste Studieninhalte",
   },
 };
 

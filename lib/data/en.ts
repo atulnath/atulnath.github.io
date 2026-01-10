@@ -70,9 +70,9 @@ export const en: TranslationKeys = {
 
   // Contact
   contact: {
-    title: "Get in Touch",
+    title: "Coffee’s on me",
     description:
-      "I'm always open to discussing new opportunities, interesting projects, or just having a conversation about technology and automation.",
+      "I love meeting new people and discussing emerging tech. If you want to talk shop, collaborate on a project, or just say hi, feel free to reach out.",
     sendMessage: "Send a Message",
     contactInformation: "Contact Information",
     email: "Email",
