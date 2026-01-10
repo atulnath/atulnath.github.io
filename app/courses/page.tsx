@@ -67,7 +67,7 @@ export default function CoursesPage() {
               {t("nav.courses")}
             </h1>
           </div>
-          <p className="text-muted-foreground text-xl max-w-3xl leading-relaxed">
+          <p className="text-muted-foreground text-xl max-w-3xl leading-relaxed" id="bachelor-courses">
             {t("pageDescriptions.courses")}
           </p>
 
@@ -76,7 +76,7 @@ export default function CoursesPage() {
         </div>
 
         {/* Bachelor Section */}
-        <section className="space-y-8">
+        <section className="space-y-8"  >
           <div className="flex items-center gap-3">
             <GraduationCap className="h-8 w-8 text-cyan-400" />
             <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -120,7 +120,7 @@ export default function CoursesPage() {
         </section>
 
         {/* Decorative Separator */}
-        <div className="relative py-8">
+        <div className="relative py-8" id="master-courses">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
           </div>

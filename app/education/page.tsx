@@ -169,7 +169,7 @@ export default function EducationPage() {
                             </h4>
                             {dynamicCoursework.length > 3 && (
                               <a
-                                href="/courses"
+                                href={education.degree.includes("M.Sc") || education.degree.includes("Master") ? "./courses#master-courses" : "./courses#bachelor-courses"}
                                 className={`text-xs font-medium bg-gradient-to-r ${theme.gradient} bg-clip-text text-transparent hover:opacity-80 transition-opacity flex items-center gap-1`}
                               >
                                 {t("education.viewAll")} {dynamicCoursework.length}  {t("education.courses")} →
