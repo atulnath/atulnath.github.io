@@ -140,4 +140,9 @@ export const en: TranslationKeys = {
     chemnitz: "Chemnitz, Germany",
     bd: "Chittagong, Bangladesh",
   },
+  education: {
+    viewAll: "View All",
+    courses: "Courses",
+    keyCourseW:"Key Coursework",
+  },
 };

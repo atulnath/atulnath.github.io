@@ -141,6 +141,11 @@ export const de = {
     chemnitz: "Chemnitz, Deutschland",
     bd: "Chittagong, Bangladesch",
   },
+  education: {
+    viewAll: "Alle Ansehen",
+    courses: "Kurse",
+    keyCourseW:"Wichtigste Studieninhalte",
+  },
 };
 
 export type TranslationKeys = typeof de;

@@ -175,7 +175,6 @@ export default function CoursesPage() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );

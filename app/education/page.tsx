@@ -165,14 +165,14 @@ export default function EducationPage() {
                         <div className="mt-6 pt-6 border-t border-border/50">
                           <div className="flex items-center justify-between mb-3">
                             <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
-                              Key Coursework
+                              {t("education.keyCourseW")}
                             </h4>
                             {dynamicCoursework.length > 3 && (
                               <a
                                 href="/courses"
                                 className={`text-xs font-medium bg-gradient-to-r ${theme.gradient} bg-clip-text text-transparent hover:opacity-80 transition-opacity flex items-center gap-1`}
                               >
-                                View All {dynamicCoursework.length} Courses →
+                                {t("education.viewAll")} {dynamicCoursework.length}  {t("education.courses")} →
                               </a>
                             )}
                           </div>
