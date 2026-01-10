@@ -83,7 +83,7 @@ export function Navigation() {
                       className={`relative ${
                         isActive
                           ? "text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500"
-                          : "text-muted-foreground group-hover:text-foreground"
+                        : "text-foreground/70 dark:text-muted-foreground group-hover:text-foreground"
                       }`}
                     >
                       {item.label}
@@ -153,7 +153,7 @@ export function Navigation() {
                   className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
                     isActive
                       ? "bg-gradient-to-r from-cyan-400/20 to-violet-500/20 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500"
-                      : "text-muted-foreground hover:bg-white/5 dark:hover:bg-white/10 hover:text-foreground"
+                    : "text-foreground/70 dark:text-muted-foreground hover:bg-white/5 dark:hover:bg-white/10 hover:text-foreground"
                   }`}
                 >
                   {item.label}

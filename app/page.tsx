@@ -63,7 +63,7 @@ export default function Home() {
           <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Profile Photo with Enhanced Effects - Shows FIRST on mobile */}
             <div
-              className="relative w-80 h-80 md:w-[30rem] md:h-[30rem] group animate-fade-in order-1 md:order-2"
+              className="relative w-80 h-80 md:w-[30rem] md:h-[30rem] mx-auto group animate-fade-in order-1 md:order-2"
               style={{ animationDelay: "0.4s" }}
             >
               {/* Background Glow Effects */}
