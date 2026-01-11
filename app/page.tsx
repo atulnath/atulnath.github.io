@@ -178,7 +178,6 @@ export default function Home() {
                   </Button>
                 )}
 
-
                 {contactInfo.socialLinks.github && (
                   <Button variant="ghost" size="icon" asChild>
                     <a
@@ -190,18 +189,6 @@ export default function Home() {
                     </a>
                   </Button>
                 )}
-              </div>
-            </div>
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-            <div className="flex flex-col items-center gap-2 group cursor-pointer">
-              <span className="text-xs text-muted-foreground font-medium tracking-wide uppercase opacity-70 group-hover:opacity-100 transition-opacity">
-                Scroll Down
-              </span>
-              <div className="relative w-6 h-10 border-2 border-gradient rounded-full p-1 scroll-indicator-border">
-                <div className="w-1.5 h-1.5 bg-gradient-to-b from-cyan-400 to-violet-500 rounded-full mx-auto scroll-wheel" />
               </div>
             </div>
           </div>
@@ -348,14 +335,18 @@ export default function Home() {
                 if (degree.includes("M.Sc") || degree.includes("Master")) {
                   return {
                     gradient: "from-cyan-400 to-blue-500",
-                    badgeClass: "bg-gradient-to-r from-cyan-500/30 to-blue-500/30 text-cyan-200 dark:text-cyan-300 border-cyan-500/50 dark:border-cyan-500/30",
-                    hoverGradient: "group-hover:from-cyan-400 group-hover:to-blue-500",
+                    badgeClass:
+                      "bg-gradient-to-r from-cyan-500/30 to-blue-500/30 text-cyan-200 dark:text-cyan-300 border-cyan-500/50 dark:border-cyan-500/30",
+                    hoverGradient:
+                      "group-hover:from-cyan-400 group-hover:to-blue-500",
                   };
                 } else {
                   return {
                     gradient: "from-emerald-400 to-teal-500",
-                    badgeClass: "bg-gradient-to-r from-emerald-500/30 to-teal-500/30 text-emerald-200 dark:text-emerald-300 border-emerald-500/50 dark:border-emerald-500/30",
-                    hoverGradient: "group-hover:from-emerald-400 group-hover:to-teal-500",
+                    badgeClass:
+                      "bg-gradient-to-r from-emerald-500/30 to-teal-500/30 text-emerald-200 dark:text-emerald-300 border-emerald-500/50 dark:border-emerald-500/30",
+                    hoverGradient:
+                      "group-hover:from-emerald-400 group-hover:to-teal-500",
                   };
                 }
               };
@@ -371,7 +362,9 @@ export default function Home() {
                   <div className="glass-card dark:glass-card-dark p-8 rounded-2xl group transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-emerald-400/10 hover:border-emerald-400/30 border border-transparent">
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
                       <div className="flex-1">
-                        <h3 className={`text-2xl font-semibold mb-2 bg-gradient-to-r ${theme.gradient} bg-clip-text text-transparent`}>
+                        <h3
+                          className={`text-2xl font-semibold mb-2 bg-gradient-to-r ${theme.gradient} bg-clip-text text-transparent`}
+                        >
                           {education.institution}
                         </h3>
                         <p className="text-muted-foreground text-lg mb-1 group-hover:text-foreground transition-colors">
@@ -383,14 +376,20 @@ export default function Home() {
                           </p>
                         )}
                       </div>
-                      <Badge className={`${education.endDate.includes('Currently') || education.endDate.includes('Derzeit')
-                        ? 'bg-gradient-to-r from-sky-400 to-indigo-500 text-white border-sky-400/60 shadow-xl shadow-sky-500/30 animate-pulse ring-2 ring-sky-400/50 hover:shadow-sky-500/50'
-                        : 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white border-emerald-500/60 shadow-xl shadow-emerald-600/30 hover:shadow-emerald-600/50'
-                        } transition-all duration-300 font-semibold text-sm px-4 py-2 w-fit`}>
+                      <Badge
+                        className={`${
+                          education.endDate.includes("Currently") ||
+                          education.endDate.includes("Derzeit")
+                            ? "bg-gradient-to-r from-sky-400 to-indigo-500 text-white border-sky-400/60 shadow-xl shadow-sky-500/30 animate-pulse ring-2 ring-sky-400/50 hover:shadow-sky-500/50"
+                            : "bg-gradient-to-r from-emerald-500 to-teal-600 text-white border-emerald-500/60 shadow-xl shadow-emerald-600/30 hover:shadow-emerald-600/50"
+                        } transition-all duration-300 font-semibold text-sm px-4 py-2 w-fit`}
+                      >
                         {education.endDate}
                       </Badge>
                     </div>
-                    <p className="text-muted-foreground">{education.location}</p>
+                    <p className="text-muted-foreground">
+                      {education.location}
+                    </p>
                   </div>
                 </div>
               );
@@ -519,7 +518,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Badge className='bg-gradient-to-r from-sky-400 to-indigo-500 text-white border-sky-400/60 shadow-xl shadow-sky-500/30 animate-pulse ring-2 ring-sky-400/50 hover:shadow-sky-500/50'>
+                    <Badge className="bg-gradient-to-r from-sky-400 to-indigo-500 text-white border-sky-400/60 shadow-xl shadow-sky-500/30 animate-pulse ring-2 ring-sky-400/50 hover:shadow-sky-500/50">
                       {latestExperience.startDate} - {latestExperience.endDate}
                     </Badge>
                   </div>
@@ -569,8 +568,13 @@ export default function Home() {
                     variant="outline"
                     className="w-full group/learn bg-gradient-to-r from-violet-500/10 to-purple-600/10 hover:from-violet-500 hover:to-purple-600 border-violet-500/30 hover:border-transparent hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/50"
                   >
-                    <Link href="/projects" className="flex items-center justify-center gap-2">
-                      <span className="font-medium">{t("sections.learnMore")}</span>
+                    <Link
+                      href="/projects"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <span className="font-medium">
+                        {t("sections.learnMore")}
+                      </span>
                       <ArrowRight className="h-4 w-4 transition-transform group-hover/learn:translate-x-1" />
                     </Link>
                   </Button>
