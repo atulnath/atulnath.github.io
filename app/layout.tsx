@@ -5,17 +5,22 @@ import { ThemeProvider } from "@/components/shared/ThemeProvider";
 import { CustomCursor } from "@/components/shared/CustomCursor";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 
+
+// Fonts 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
 
+// Space Grotesk Font
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
   display: "swap",
 });
+
+
 
 export const metadata = {
   title:
@@ -39,7 +44,6 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ateebshahid.com",
     title: "Atul Chandra Nath | Automotive Software Graduate",
     description:
       "Automotive Software Graduate | Embedded Systems Enthusiast. Interests: Computer Vision, Machine Learning, Artificial Intelligence, Large Language Models.",

@@ -61,7 +61,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="min-h-[90vh] flex items-center justify-center px-6 py-20">
           <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* Profile Photo with Enhanced Effects - Shows FIRST on mobile */}
+            {/* Profile Photo Featured- Appears First on Mobile */}
             <div
               className="relative w-80 h-80 md:w-[30rem] md:h-[30rem] mx-auto group animate-fade-in order-1 md:order-2"
               style={{ animationDelay: "0.4s" }}
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Text Section - Shows SECOND on mobile */}
+            {/* Text Section - Appears in second position on Mobile */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left animate-fade-in order-2 md:order-1">
               <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
                 {personalInfo.name}

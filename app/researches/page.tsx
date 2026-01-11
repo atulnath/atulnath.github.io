@@ -1,9 +1,8 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Award, ExternalLink, FileText } from "lucide-react";
+import { Award, ExternalLink, FileText } from "lucide-react";
 import { useData } from "@/lib/utils/useData";
 import {
-  Card,
   CardContent,
   CardDescription,
   CardHeader,
