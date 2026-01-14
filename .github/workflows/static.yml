@@ -40,8 +40,6 @@ jobs:
 
       - name: Build with Next.js
         run: pnpm run build
-        env:
-          NEXT_PUBLIC_BASE_PATH: /portfolio-of-atul-nextjs-tailwind
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

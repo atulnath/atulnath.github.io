@@ -18,7 +18,6 @@ import {
   MessageSquare,
   Phone,
 } from "lucide-react";
-import "../styles/globals.css";
 import { Badge } from "@/components/ui/badge";
 import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ContactForm from "@/components/forms/ContactForm";
