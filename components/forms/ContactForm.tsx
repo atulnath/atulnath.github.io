@@ -52,9 +52,9 @@ export default function ContactForm() {
     try {
       await emailjs.sendForm(
         "default_service",
-        "template_ixuq35o",
+        "template_5b50brv",
         formRef.current!,
-        "ehdE9q289VbqNO4oU" //public key
+        "UlWtl6XLLM3tK1Nc3" //public key
       );
 
       setForm({ name: "", email: "", phone: "", message: "" });
