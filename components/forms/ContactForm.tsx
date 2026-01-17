@@ -47,21 +47,37 @@ export default function ContactForm() {
       return;
     }
 
+    // Get EmailJS credentials from environment variables
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "default_service";
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_5b50brv";
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "UlWtl6XLLM3tK1Nc3";
+
+    // Check if credentials are properly configured
+    if (serviceId === "default_service" || !serviceId) {
+      setStatus({
+        type: "error",
+        text: "Email service not configured. Please contact the administrator.",
+      });
+      return;
+    }
+
     setStatus({ type: "sending", text: t("submitForm.sending") });
 
     try {
+      // Initialize EmailJS with your public key
+      emailjs.init(publicKey);
+
       await emailjs.sendForm(
-        "default_service",
-        "template_5b50brv",
+        serviceId,
+        templateId,
         formRef.current!,
-        "UlWtl6XLLM3tK1Nc3" //public key
+        publicKey
       );
 
       setForm({ name: "", email: "", phone: "", message: "" });
       setFormErrors({});
       setStatus({ type: "ok", text: t("submitForm.ok") });
     } catch (err) {
-      console.error("EmailJS error:", err);
       setStatus({
         type: "error",
         text: t("submitForm.error"),
